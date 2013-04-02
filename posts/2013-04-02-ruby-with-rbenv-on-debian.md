@@ -13,6 +13,7 @@ Quick guide to installing Ruby versions on Debian using [rbenv](https://github.c
 5. Restart your shell
 6. Install ruby: e.g. `rbenv install 1.9.3-p392`
 7. Rebuild the shim executables: `rbenv rehash`
+8. Set the rbenv global version of Ruby to the one just installed: e.g. `rbenv global 1.9.3-p392`
 
 ****
 After installing, if you get the error `no such file to load -- zlib (LoadError)` when trying to install any gems this is likely because you are missing zlib1g or zlib1g-dev. You will need to `apt get install zlib1g zlib1g-dev` and then recompile Ruby again by rerunning `rbenv install`.
